@@ -12,4 +12,4 @@ qemu: grub
         -netdev user,id=mynet0$(qemu_net_append) \
         -device virtio-net-pci,netdev=mynet0 \
         -drive format=raw,file=$(disc_image),if=virtio \
-        -bios /usr/share/qemu/OVMF.fd
+        -bios /usr/share/ovmf/OVMF.fd
